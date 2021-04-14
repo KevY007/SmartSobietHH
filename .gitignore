@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+.vs/sobiet-godmode/v16/Browse.VC.db
+*.ipch
+Debug/smarthh.ilk
+Debug/smarthh.pdb
+.vs/sobiet-godmode/v16/.suo
