@@ -1,1 +1,11 @@
-﻿  samp-rakhook-base.vcxproj -> E:\Github\sobiet_godmode\Debug\smarthh.asi
+﻿  ADE32.cpp
+  BitStream.cpp
+  CDetour.cpp
+  functions.cpp
+  HookedRakClient.cpp
+  IniFuncs.cpp
+e:\github\smartsobiethh\samp-rakhook-base\inifuncs.cpp(48): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+  RakClient.cpp
+  Generating Code...
+  samp-rakhook-base.vcxproj -> E:\Github\SmartSobietHH\Debug\smarthh.asi

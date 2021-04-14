@@ -170,7 +170,7 @@ void ThrMainFS()
 			iniWriter.WriteInteger("Settings", "Toggle_VK_Key_2", key2);
 
 			
-			if(!stealth) addMessageToChatWindow(D3DCOLOR_XRGB(255, 255, 255), "KevY's Smart HH /gmtog /gmtogstealth /gmtogupd (stealth to hide)");
+			if(!stealth) addMessageToChatWindow(D3DCOLOR_XRGB(255, 255, 255), "Smart HH /gmtog /gmtogstealth /gmtogupd (stealth to hide)");
 		}
 		if (initSampRak)
 		{
@@ -232,6 +232,7 @@ bool OnSendPacket(BitStream* parameters, PacketPriority priority, PacketReliabil
 	return true;
 }
 
+void OnReceiveRPC() {} // ON RECEIVE RPC IS THE FUNCTION DOWN HERE!! IT'S NOT THIS IT IS HandleRPCPacketFunc -- LAZY TO RENAME FOR YOU
 void HandleRPCPacketFunc(unsigned char id, RPCParameters* rpcParams, void(*callback) (RPCParameters*))
 {
 	if (rpcParams != nullptr && rpcParams->numberOfBitsOfData >= 8)
