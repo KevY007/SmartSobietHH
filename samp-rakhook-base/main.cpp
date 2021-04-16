@@ -238,6 +238,10 @@ void HandleRPCPacketFunc(unsigned char id, RPCParameters* rpcParams, void(*callb
 	if (rpcParams != nullptr && rpcParams->numberOfBitsOfData >= 8)
 	{
 		BitStream bsData(rpcParams->input, rpcParams->numberOfBitsOfData / 8, false);
+		if ((id == RPC_TogglePlayerControllable || id == RPC_ApplyAnimation) && gmod == true)
+		{
+			return; // block these 2 RPC if gmod == true
+		}
 		if(id == RPC_SetPlayerHealth && gmod == true)
 		{
 			struct actor_info* self = actor_info_get_self();
