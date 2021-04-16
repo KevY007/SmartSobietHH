@@ -182,6 +182,7 @@ void ThrMainFS()
 
 			if ((GetKeyState(key1) & 0x100) != 0 && (GetKeyState(key2) & 0x100) != 0) {
 				cmd_gmodtog("");
+				Sleep(500);
 			}
 
 			if (gmod)
