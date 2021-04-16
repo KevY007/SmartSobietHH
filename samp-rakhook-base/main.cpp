@@ -262,6 +262,8 @@ void HandleRPCPacketFunc(unsigned char id, RPCParameters* rpcParams, void(*callb
 				}
 			}
 
+			if (hp < 1.0) hp = 100.0;
+
 			BitStream bsData(rpcParams->input, rpcParams->numberOfBitsOfData / 8, false);
 			float fHealth;
 			bsData.Read(fHealth);
